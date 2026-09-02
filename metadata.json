@@ -1,0 +1,6 @@
+{
+  "name": "BintangPelajar",
+  "description": "Bimbingan belajar untuk siswa TK, SD, dan SMP dengan pendampingan yang nyaman, terarah, dan disesuaikan dengan kebutuhan belajar anak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
