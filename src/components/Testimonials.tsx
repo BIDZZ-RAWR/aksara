@@ -1,6 +1,29 @@
+import { useState } from 'react';
 import { testimonials } from '../config/siteConfig';
 import { motion } from 'framer-motion';
 import { Quote } from 'lucide-react';
+
+function AvatarImage({ src, name }: { src?: string; name: string }) {
+  const [hasError, setHasError] = useState(false);
+
+  if (src && !hasError) {
+    return (
+      <img
+        src={src}
+        alt={`Foto ${name}`}
+        loading="lazy"
+        onError={() => setHasError(true)}
+        className="w-14 h-14 rounded-full object-cover shadow-sm border border-white shrink-0"
+      />
+    );
+  }
+
+  return (
+    <div className="w-14 h-14 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center shadow-sm border border-white shrink-0">
+      {name.charAt(0)}
+    </div>
+  );
+}
 
 export function Testimonials() {
   if (!testimonials || testimonials.length === 0) return null;
@@ -28,12 +51,7 @@ export function Testimonials() {
               <Quote className="absolute top-8 right-8 w-12 h-12 text-slate-200" />
               
               <div className="flex items-center gap-4 mb-6 relative z-10">
-                <img
-                  src={testimonial.image}
-                  alt={`Foto ${testimonial.name}`}
-                  loading="lazy"
-                  className="w-14 h-14 rounded-full object-cover shadow-sm border border-white"
-                />
+                <AvatarImage src={testimonial.image} name={testimonial.name} />
                 <div>
                   <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
                   <p className="text-sm text-slate-500">{testimonial.role}</p>
@@ -50,3 +68,5 @@ export function Testimonials() {
     </section>
   );
 }
+
+

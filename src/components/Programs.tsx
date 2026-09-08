@@ -15,7 +15,7 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
@@ -23,10 +23,7 @@ export function Programs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={cn(
-                "bg-white rounded-[28px] border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col",
-                index === 1 && "lg:mt-10"
-              )}
+              className="bg-white rounded-[28px] border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MessageCircle, ArrowRight, BookOpen } from 'lucide-react';
+import { MessageCircle, ArrowRight, BookOpen, BriefcaseBusiness } from 'lucide-react';
 import { siteConfig, openWhatsApp } from '../config/siteConfig';
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
               className="text-lg md:text-xl text-slate-600 mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Bimbingan belajar untuk siswa TK, SD, dan SMP dengan pendampingan yang nyaman, terarah, dan disesuaikan dengan kebutuhan belajar anak.
+              Bimbingan belajar untuk siswa BTQ, PAUD & TK, SD, dan SMP dengan pendampingan yang nyaman, terarah, dan disesuaikan dengan kebutuhan belajar anak.
             </motion.p>
 
             <motion.div
@@ -83,11 +83,11 @@ export function Hero() {
               {/* Floating Badge */}
               <div className="absolute bottom-8 left-8 right-8 bg-white border border-slate-100 p-4 rounded-2xl shadow-xl flex items-center gap-4">
                 <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center shrink-0">
-                  <BookOpen className="w-6 h-6 text-accent-700" />
+                <BriefcaseBusiness className="w-6 h-6 text-accent-700" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm md:text-base">Pembelajaran Terarah</h3>
-                  <p className="text-slate-600 text-xs md:text-sm">Untuk TK • SD • SMP</p>
+                  <h3 className="font-bold text-slate-900 text-sm md:text-base">Hikmawan Firman</h3>
+                  <p className="text-slate-600 text-xs md:text-sm">Founder Aksara Plus</p>
                 </div>
               </div>
             </div>
@@ -98,3 +98,4 @@ export function Hero() {
     </section>
   );
 }
+

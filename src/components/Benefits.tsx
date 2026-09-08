@@ -43,7 +43,7 @@ export function Benefits() {
           {/* Left Column: Sticky Title */}
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
-              Kenapa Memilih<br/>Bimbingan Belajar Kami?
+              Kenapa Memilih<br/>Bimbingan Belajar Aksara Plus?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
               Belajar bukan hanya tentang menyelesaikan soal, tetapi tentang membangun pemahaman dan kebiasaan belajar yang baik sejak dini.
