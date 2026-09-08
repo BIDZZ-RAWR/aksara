@@ -55,6 +55,20 @@
         ]
       }
     </script>
+    <style>
+      /* Hide Netlify injected badge / widget overlay */
+      .nl-wrap,
+      #nl-badge,
+      #nl-card,
+      [class*="nl-wrap"],
+      [id*="nl-badge"],
+      [id*="nl-card"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
