@@ -106,8 +106,7 @@ export const pricingPlans: PricingPlan[] = [
     monthlyRates: [
       { meetings: "8x Pertemuan", price: "Rp 450.000" },
       { meetings: "12x Pertemuan", price: "Rp 550.000" },
-      { meetings: "16x Pertemuan", price: "Rp 650.000" },
-      { meetings: "20x Pertemuan", price: "Rp 700.000" }
+      { meetings: "16x Pertemuan", price: "Rp 650.000" }
     ],
     whatsappMessage: "Halo, saya ingin mendaftar program BTQ (Baca Tulis Al-Qur'an)."
   },
@@ -118,8 +117,7 @@ export const pricingPlans: PricingPlan[] = [
     monthlyRates: [
       { meetings: "8x Pertemuan", price: "Rp 500.000" },
       { meetings: "12x Pertemuan", price: "Rp 600.000" },
-      { meetings: "16x Pertemuan", price: "Rp 700.000" },
-      { meetings: "20x Pertemuan", price: "Rp 800.000" }
+      { meetings: "16x Pertemuan", price: "Rp 700.000" }
     ],
     whatsappMessage: "Halo, saya ingin mendaftar program bimbingan belajar PAUD & TK."
   },
@@ -132,8 +130,7 @@ export const pricingPlans: PricingPlan[] = [
     monthlyRates: [
       { meetings: "8x Pertemuan", price: "Rp 550.000" },
       { meetings: "12x Pertemuan", price: "Rp 650.000" },
-      { meetings: "16x Pertemuan", price: "Rp 750.000" },
-      { meetings: "20x Pertemuan", price: "Rp 850.000" }
+      { meetings: "16x Pertemuan", price: "Rp 750.000" }
     ],
     whatsappMessage: "Halo, saya ingin mendaftar program bimbingan belajar SD."
   },
@@ -144,8 +141,7 @@ export const pricingPlans: PricingPlan[] = [
     monthlyRates: [
       { meetings: "8x Pertemuan", price: "Rp 600.000" },
       { meetings: "12x Pertemuan", price: "Rp 750.000" },
-      { meetings: "16x Pertemuan", price: "Rp 850.000" },
-      { meetings: "20x Pertemuan", price: "Rp 900.000" }
+      { meetings: "16x Pertemuan", price: "Rp 850.000" }
     ],
     whatsappMessage: "Halo, saya ingin mendaftar program bimbingan belajar SMP."
   }
@@ -198,7 +194,7 @@ export const faqs = [
   },
   {
     question: "Berapa biaya bimbingan belajar?",
-    answer: "Biaya pendaftaran mulai dari Rp 50.000. Biaya bulanan bervariasi sesuai pilihan paket pertemuan (8x, 12x, 16x, atau 20x pertemuan). Silakan lihat rincian biaya lengkap pada bagian Pilihan Program & Biaya di atas."
+    answer: "Biaya pendaftaran mulai dari Rp 50.000. Biaya bulanan bervariasi sesuai pilihan paket pertemuan (8x, 12x, atau 16x pertemuan). Silakan lihat rincian biaya lengkap pada bagian Pilihan Program & Biaya di atas."
   },
   {
     question: "Apakah bisa konsultasi terlebih dahulu sebelum mendaftar?",
