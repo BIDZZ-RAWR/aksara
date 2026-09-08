@@ -23,7 +23,7 @@ export function TrustStrip() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.8 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`flex items-center gap-3 py-3 ${index % 2 === 1 ? 'md:mt-6 lg:mt-0' : ''} ${index === 1 || index === 3 ? 'lg:mt-6' : ''}`}
+              className="flex items-center gap-3 py-2"
             >
               <div className="p-2.5 bg-blue-50 text-blue-600 rounded-xl shrink-0">
                 <point.icon className="w-5 h-5" />

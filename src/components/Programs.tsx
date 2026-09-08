@@ -15,7 +15,7 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
@@ -37,7 +37,7 @@ export function Programs() {
                 </div>
               </div>
 
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-6 xl:p-8 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">{program.title}</h3>
                 <p className="text-slate-600 mb-6 flex-1">
                   {program.description}

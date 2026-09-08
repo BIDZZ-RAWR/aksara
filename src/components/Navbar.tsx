@@ -20,6 +20,7 @@ export function Navbar() {
     { label: 'Beranda', href: '#beranda' },
     { label: 'Program', href: '#program' },
     { label: 'Keunggulan', href: '#keunggulan' },
+    { label: 'Biaya', href: '#biaya' },
     { label: 'Cara Daftar', href: '#cara-daftar' },
     { label: 'FAQ', href: '#faq' },
   ];

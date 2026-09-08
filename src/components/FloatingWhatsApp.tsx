@@ -23,18 +23,18 @@ export function FloatingWhatsApp() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          className="fixed bottom-4 left-4 right-4 z-50 md:bottom-6 md:right-6 md:left-auto md:w-auto"
+          initial={{ opacity: 0, scale: 0.9, y: 16 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.9, y: 16 }}
+          className="fixed bottom-5 right-5 z-50"
         >
           <button
             onClick={() => openWhatsApp()}
             aria-label="Chat WhatsApp"
-            className="w-full md:w-14 md:h-14 md:p-0 flex items-center justify-center gap-2 md:gap-0 bg-[#25D366] text-white px-6 py-4 rounded-full font-semibold shadow-lg border border-[#1da851] hover:bg-[#20bd5a] hover:shadow-xl hover:-translate-y-1 transition-all"
+            className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 md:px-5 md:py-3.5 rounded-full font-bold shadow-xl border border-[#1da851] hover:bg-[#20bd5a] hover:shadow-2xl hover:-translate-y-1 transition-all"
           >
-            <MessageCircle className="w-6 h-6" />
-            <span className="text-base md:hidden">Chat WhatsApp</span>
+            <MessageCircle className="w-5 h-5 fill-white text-[#25D366]" />
+            <span className="text-sm font-bold pr-1">Chat WhatsApp</span>
           </button>
         </motion.div>
       )}
